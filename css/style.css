@@ -12,16 +12,21 @@ a{
 
 /* nav bar style */
 .navbar{
-    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     
 }
 .navimg{
-    float:left;
-    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 .navul{
-    float: right;
+    
     
     
 }
@@ -33,4 +38,8 @@ a{
 }
 .navlink{
     color: #fff;
+}
+
+.navli:hover .navlink {
+    color:blue;
 }

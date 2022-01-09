@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix{overflow: auto;}
+
+a{
+    text-decoration: none;
+}
+
+
+/* nav bar style */
+.navbar{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.navimg{
+    float:left;
+    display: inline-block;
+}
+.navul{
+    float: right;
+    
+    
+}
+.navli{
+    margin-right: 10px;
+    display:inline-block;
+    padding: 10px 0;
+
+}
+.navlink{
+    color: #fff;
+}

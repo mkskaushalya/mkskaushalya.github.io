@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .clearfix{overflow: auto;}
@@ -11,7 +13,17 @@ a{
     text-decoration: none;
 }
 
-
+.sech1 {
+    padding-top: 50px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color:#2F00FF;
+}
+.sech{
+    padding-top: 0;    
+}
 
 /* nav bar style */
 #navsec {
@@ -19,6 +31,8 @@ a{
     padding: 5px 50px;
     background-color: #000;
 }
+
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -27,6 +41,7 @@ a{
     font-family: "Poppins", Arial, sans-serif;
     
 }
+
 .navimg{
     /* border: 2px solid; */
     border-radius: 50%;
@@ -64,6 +79,8 @@ a{
 
 .navlink:hover {
     color:blue;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 
@@ -71,14 +88,26 @@ a{
 /* home section */
 #home{
     background-image: url('../img/background.jpg');
+}
+
+
+#home, #social, #activities, #about, #contact {
+    background-color: #111;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: inherit;
-    height: calc(100vh - 60px);
+    height: 100vh;
     width: 100%;
 }
+#social,  #about  {
+    background-color: #111;
+}
+
+#activities, #contact {
+    background-color: #222;
+}
 body {
-    
+    height: 100vh;
     background-color: #222;
     
 }

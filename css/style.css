@@ -10,13 +10,15 @@ a{
 }
 
 
+
 /* nav bar style */
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #111;
+    
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -26,7 +28,7 @@ a{
     height: 50px;
 }
 .navimg:hover{
-    scale: 1.2;
+    
 }
 
 .navli{
@@ -41,4 +43,13 @@ a{
 
 .navli:hover .navlink {
     color:blue;
+}
+
+
+
+/* home section */
+body {
+    background-image: url('../img/background.jpg');
+    background-color: #222;
+    position: absolute;
 }

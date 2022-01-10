@@ -75,6 +75,7 @@ a{
     background-repeat: no-repeat;
     background-size: inherit;
     height: calc(100vh - 60px);
+    width: 100%;
 }
 body {
     

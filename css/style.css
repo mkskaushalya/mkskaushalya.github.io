@@ -17,7 +17,7 @@ a{
 #navsec {
     margin: 0;
     padding: 5px 50px;
-    /* background-color: #111; */
+    background-color: #000;
 }
 .navbar{
     display: flex;
@@ -69,7 +69,15 @@ a{
 
 
 /* home section */
-body {
+#home{
     background-image: url('../img/background.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    height: calc(100vh - 60px);
+}
+body {
+    
     background-color: #222;
+    
 }

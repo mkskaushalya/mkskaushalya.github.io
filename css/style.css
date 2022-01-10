@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,36 +14,52 @@ a{
 
 
 /* nav bar style */
+#navsec {
+    margin: 0;
+    padding: 5px 50px;
+    /* background-color: #111; */
+}
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    
-    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;    
+    font-family: "Poppins", Arial, sans-serif;
     
 }
 .navimg{
+    /* border: 2px solid; */
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
-.navimg:hover{
+
+
+.navli{
+    display:inline-block;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-right: 2px solid blue;
+    height: 100%;
+
+}
+
+.navli:last-child {
+    border-right:none;
+}
+.navlink{
+    height: auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+    padding: 0;
     
 }
 
-.navli{
-    margin-right: 10px;
-    display:inline-block;
-    padding: 10px 0;
-
-}
-.navlink{
-    color: #fff;
-}
-
-.navli:hover .navlink {
+.navlink:hover {
     color:blue;
 }
 
@@ -51,5 +69,4 @@ a{
 body {
     background-image: url('../img/background.jpg');
     background-color: #222;
-    position: absolute;
 }

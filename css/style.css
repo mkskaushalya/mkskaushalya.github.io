@@ -191,37 +191,6 @@ a{
 /* End Keyframes */
 
 
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-	/* header */
-	#navsec .hamburger {
-		display: none;
-	}
-	#navsec .nav-list ul {
-		position: initial;
-		display: block;
-		height: auto;
-		width: fit-content;
-		background-color: transparent;
-	}
-	#navsec .nav-list ul li {
-		display: inline-block;
-	}
-	#navsec .nav-list ul li a {
-		font-size: 1.8rem;
-	}
-	#navsec .nav-list ul a:after {
-		display: none;
-	}
-	/* End header */
-
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
-}
-/* End  Media Query For Desktop */
-
 
 /* home section */
 #home{

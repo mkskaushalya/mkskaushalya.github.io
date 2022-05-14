@@ -4,15 +4,23 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-body{
-    background-color: #fafaff;
-}
+
 a{
     text-decoration: none;
 }
 ul, ol {
     list-style: none;
 }
+
+body{
+    background-color: #fafaff;
+    background: url(./../img/blob/blob2.svg), #f0f0ff;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+    background-origin: content-box;
+}
+
 header{
     position: -webkit-sticky;
     position: sticky;
@@ -205,7 +213,94 @@ header.sticky .nav-right ul a li, header.sticky .search-btn, header.sticky .open
 
 
 
-/* card */
+/* Home Page Style */
+#home-page{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.home-main{
+    /* background-color: #000; */
+    padding-bottom: 10%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #000; */
+    
+}
+.home-head{
+    display: flex;
+    align-items: center;
+    height: calc(100% - 100px);
+    width: 100%;
+    
+}
+
+.home-head h1{
+    padding-left: 30%;
+    padding-bottom: 0%;
+    font-size: 40px;
+}
+
+.bg-svg{
+    position: absolute;
+    opacity: 0.7;
+    z-index: -4;
+    height: 200px;
+    top: 0px;
+    width: 100%;
+}
+.bg-svg2{
+    opacity: 0.4;
+    position: absolute;
+    z-index: -3;
+    height: 350px;
+    left: -75px;
+    top: -130px;
+    width: 350px;
+
+}
+
+.bg-svg3{
+    opacity: 0.4;
+    position: absolute;
+    z-index: -6;
+    top: 25px;
+    left: 10px;
+    max-width: 1450px;
+    max-height: 1450px;
+    aspect-ratio: 1/1;
+
+}
+
+  /* Home Section Style */
+#home-page{
+    /* background-color: #000; */
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+.shape-1{
+    /* background-color: gray; */
+    
+}
+#blobSvg{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    
+
+}
+
+/* End Home Section */
+
+/*Item Card */
 .card-h {
     display: flex;
     justify-content: space-evenly;
@@ -263,21 +358,33 @@ header.sticky .nav-right ul a li, header.sticky .search-btn, header.sticky .open
 
 
 /* Contact Page */
+.contact{
+    padding: 0 100px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info h1{
+    font-size: 35px;
+}
+
 .contact-us{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .con-card{
     background-color: #fff;
-    width: 300px;
-    padding: 50px 20px;
+    width: 400px;
+    padding: 80px 20px;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 18px 10px;
     border-radius:10px;
     align-items: center;
     justify-content: center;
@@ -625,8 +732,53 @@ footer div{
     }
 
 /* Media Screen  */
+@media(max-width: 1460px){
+    .con-card{
+        width: 350px;
+        padding: 60px 15px;
+    }
+}
+
+@media(max-width: 1310px){
+    .con-card{
+        width: 320px;
+        padding: 45px 12px;
+    }
+}
+@media(max-width: 1220px){
+    .con-card{
+        width: 400px;
+        padding: 80px 20px;
+    }
+}
+@media(max-width: 1040px){
+    .con-card{
+        width: 350px;
+        padding: 60px 15px;
+    }
+}
+@media(max-width: 940px){
+    .con-card{
+        width: 320px;
+        padding: 45px 12px;
+    }
+}
+@media(max-width: 880px){
+    .con-card{
+        width: 265px;
+        padding: 40px 10px;
+    }
+}
+
 
 @media(max-width: 770px){
+    .contact{
+        padding: 0 50px;
+    }
+    .con-card{
+        width: 400px;
+        padding: 80px 20px;
+    }
     .nav-right ul{
         padding-top: 100px;
         z-index: 2000;
@@ -700,6 +852,7 @@ footer div{
 
   }
  @media(max-width: 575px){
+    
     .card{
         width: 420px;
         height: 300px;
@@ -718,6 +871,24 @@ footer div{
 
   }
   @media(max-width: 510px){
+
+    .bg-svg2{
+        left: 40px;
+        max-width: 300px;
+    
+    }
+    .bg-svg3{
+        
+        top: 50px;
+    
+    }
+    .contact{
+        padding: 0 20px;
+    }
+    .con-card{
+        width: 350px;
+        padding: 60px 15px;
+    }
     .openbtn{
         display: flex;
         position:absolute;
@@ -801,6 +972,13 @@ footer div{
 
   
 @media(max-width: 400px){
+    .contact{
+        padding: 0 10px;
+    }
+    .con-card{
+        width: 320px;
+        padding: 40px 10px;
+    }
     .nav{
         /* display: none; */
     }
@@ -813,7 +991,7 @@ footer div{
   .card{
       width: 280px;
       height: 200px;
-      font-size: 30px;
+      font-size: 20px;
       color: #444;
       border-top: 3px solid hsl(180, 62%, 55%);
   }
@@ -833,7 +1011,7 @@ footer div{
     .card{
         width: 80vw;
         height: 40vh;
-        font-size: 20px;
+        font-size: 1em;
         color: #444;
         border-top: 3px solid hsl(180, 62%, 55%);
     }

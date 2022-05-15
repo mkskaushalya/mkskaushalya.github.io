@@ -264,7 +264,7 @@ header.sticky .nav-right ul a li, header.sticky .search-btn, header.sticky .open
     /* top: -5%; */
     /* right: 0%; */
     /* position: absolute; */
-    background: url(./../img/blob/blob1.svg);
+    background: url(img/blob/blob1.svg);
     background-repeat: no-repeat;
     background-position: 30% 58%;
     background-size: 155% 155%;

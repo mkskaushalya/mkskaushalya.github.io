@@ -251,6 +251,7 @@ header.sticky .nav-right ul a li, header.sticky .search-btn, header.sticky .open
 .theameimg img{
     height:auto;
     width: 60%;
+    animation: updown 3s linear infinite;
     
     
 }
@@ -264,7 +265,7 @@ header.sticky .nav-right ul a li, header.sticky .search-btn, header.sticky .open
     /* top: -5%; */
     /* right: 0%; */
     /* position: absolute; */
-    background: url("https://tute.lk/img/blob/blob1.svg");
+    background: url(./../img/blob/blob1.svg);
     background-repeat: no-repeat;
     background-position: 30% 58%;
     background-size: 155% 155%;
@@ -1172,4 +1173,17 @@ footer div{
     100% {
         opacity: 0.1;
       }
+  }
+
+  @keyframes updown {
+      0%, 100%, 10%{
+          transform: translateY(0px);
+      }
+      30%, 70%{
+        transform: translateY(4px);
+
+      }
+      50%{
+        transform: translateY(5px);
+    }
   }

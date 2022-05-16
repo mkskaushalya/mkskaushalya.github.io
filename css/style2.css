@@ -299,7 +299,7 @@ header.sticky .nav-right .go-home{
 .go-home i.fa-solid {
     animation: go-home 1.5s infinite;
 }
-.go-down:hover, .go-home:hover{
+.go-down:hover{
     background-color: white;
     color: blue;
     transition: all 0.5s;

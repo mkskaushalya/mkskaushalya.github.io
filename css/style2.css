@@ -209,8 +209,42 @@ header.sticky .nav-right .go-home{
     animation: spin 2.5s linear infinite;
   } */
 
+/* ////////////////////////////////////// */
+/* Breadcrubs Bar */
+.breadcrubs-bar{
+    width: 100%;
+    /* background-color: #000; */
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: start;
+}
 
+.breadcrubs-bar ul a li{
+    font-size: 1.1rem;
+    display:inline-block;
+    /* margin: 0 0 0 5px; */
+    color: #444;
+    font-weight: 600;
 
+}
+.breadcrubs-bar ul{
+    display: flex;
+    align-items: center;
+    /* background-color: #000; */
+    height: 100%;
+
+}
+.breadcrubs-bar ul a{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    /* background-color: #000; */
+    /* margin-right: 3px; */
+    /* padding: 5px; */
+}
+/* Breadcrubs Bar */
+/* ////////////////////////////////////// */
 
 
 

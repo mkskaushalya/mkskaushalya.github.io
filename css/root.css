@@ -46,6 +46,7 @@
     --font-family : 'Poppins', sans-serif;
 
     --main-padding: 150px;
+    --nav-padding: 0 150px;
     --main-padding-X: 0 var(--main-padding);
 
     --nav-height: 100px;
@@ -104,18 +105,23 @@ button:hover{
 body{
     background-color: var(--bg-main);
     position: relative;
+    min-height: 100vh;
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--main-padding-X);
+    padding: var(--nav-padding);
     width: 100%;
     height: var(--nav-height);
+    backdrop-filter: blur(5px);
     /* background-color: #888; */
     position: fixed;
     z-index: 10000;
+}
+header.scroll{
+    background-color: #fff3;
 }
 
 #main-nav{
@@ -146,6 +152,7 @@ header{
 #main-nav .right ul{
     justify-content: flex-end;
     column-gap: 30px;
+    flex-wrap: wrap;
 }
 #main-nav .right ul a{
     cursor: pointer;
@@ -155,6 +162,25 @@ header{
     font-weight: 500;
     cursor: pointer;
 }
+
+
+/* Hamburger */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--first-color);
+    border-radius: 2px;
+    
+}
+
 
 main{
     width: 100%;
@@ -203,7 +229,7 @@ section>.cont{
 #hero .cont .left{
     height: 100%;
     width: 700px;
-    row-gap: 30px;
+    row-gap: 20px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -230,4 +256,66 @@ section>.cont{
     width: 100%;
     justify-content: flex-start;
     column-gap: 20px;
+}
+
+@media screen and (max-width:900px){
+    :root{
+        --main-padding: 100px;
+    }
+
+}
+@media screen and (max-width:768px){
+    :root{
+        --nav-padding: 20px;
+        --main-padding: 60px;
+    }
+
+    
+    header{        
+        bottom: 0;
+        left: var(--main-padding);
+        background-color: #fff3;
+        backdrop-filter: blur(5px);
+        padding: var(--nav-padding);
+        width: calc(100% - var(--main-padding)*2);
+        height: 60px;        
+        border-radius: 20px 20px 0 0;
+    }
+
+    #main-nav .left .logo{
+        width: 40px;
+        height: 40px;
+    
+    }
+    #main-nav .left .headline{
+        display: none;
+    
+    }
+
+
+    .hamburger{
+        display: none;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+@media screen and (max-width:550px){
+    :root{
+        --main-padding: 20px;
+    }
+
+}
+@media screen and (max-width:400px){
+    :root{
+        --main-padding: 10px;
+    }
+
 }

@@ -1,2 +1,10 @@
-const bullb1 = document.querySelector('.bullb1');
-let x = 0;
+window.addEventListener("scroll", function(){
+    scrollY = window.scrollY;
+    if(scrollY >= 100){
+        console.log("active");
+    }else{
+        console.log("deactive");
+
+    }
+    console.log(scrollY);
+})

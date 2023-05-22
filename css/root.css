@@ -156,11 +156,34 @@ header.scroll{
 }
 #main-nav .right ul a{
     cursor: pointer;
+    
 }
 #main-nav .right ul a li{
     font-size: var(--font-size-12);
     font-weight: 500;
     cursor: pointer;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+#main-nav .right ul a li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 1px;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    background-color: var(--first-color);
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+}
+#main-nav .right ul a:hover li{
+    color: var(--first-color);
+}
+#main-nav .right ul a:hover li::after{
+    width: 100%;
+    left: 0;
+    right: auto;
 }
 
 
@@ -203,60 +226,6 @@ section>.cont{
     justify-content: center;
 }
 
-#hero{
-    position: relative;
-    height: 100vh;
-}
-
-.hero-bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-.hero-bg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#hero .cont{
-    justify-content: space-between;
-}
-#hero .cont .left{
-    height: 100%;
-    width: 700px;
-    row-gap: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#hero .cont .left h2{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    font-size: var(--font-size-35);
-    line-height: var(--font-size-35);
-}
-#hero .cont .left h2 .name{
-    font-size: var(--font-size-40);
-    line-height: var(--font-size-45);
-}
-#hero .cont .left h3{
-    font-size: var(--font-size-25);
-    line-height: var(--font-size-25);
-    color: var(--first-color);
-}
-#hero .cont .left p{
-    font-size: var(--font-size-12);
-}
-#hero .cont .left .hero-btn-sec{
-    width: 100%;
-    justify-content: flex-start;
-    column-gap: 20px;
-}
 
 @media screen and (max-width:900px){
     :root{

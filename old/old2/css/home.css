@@ -1,0 +1,98 @@
+#hero{
+    position: relative;
+    height: 100vh;
+}
+
+.hero-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.hero-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero .cont{
+    justify-content: space-between;
+}
+#hero .cont .left{
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#hero .cont .left h2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: var(--font-size-35);
+    line-height: var(--font-size-35);
+}
+#hero .cont .left h2 .name{
+    font-size: var(--font-size-40);
+    line-height: var(--font-size-45);
+}
+#hero .cont .left h3{
+    font-size: var(--font-size-25);
+    line-height: var(--font-size-25);
+    color: var(--first-color);
+}
+#hero .cont .left p{
+    font-size: var(--font-size-12);
+}
+#hero .cont .left .hero-btn-sec{
+    width: 100%;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+
+@media screen and (max-width:768px){
+ 
+    #hero .cont .left h2{
+        font-size: var(--font-size-20);
+        line-height: var(--font-size-17);
+        text-align: center;
+        width: 100%;
+    }
+    #hero .cont .left h2 .name{
+        font-size: var(--font-size-25);
+        line-height: var(--font-size-25);
+        text-align: center;
+        width: 100%;
+    }
+    #hero .cont .left h3{
+        font-size: var(--font-size-14);
+        line-height: var(--font-size-10);
+        color: var(--first-color);
+        text-align: center;
+        width: 100%;
+    }
+    #hero .cont .left p{
+        font-size: var(--font-size-8);
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-btn-sec{
+        width: 100%;
+        justify-content: center !important;
+    }
+    .hero-btn-sec button{
+        min-height: 40px !important;
+        padding: 0 15px;
+        font-size: var(--font-size-9);
+    }
+
+    #hero .cont .left{
+        row-gap: 10px;
+    }
+}
